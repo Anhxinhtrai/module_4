@@ -1,19 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CalculatorComponent } from './calculator/calculator.component';
-import {FormsModule} from "@angular/forms";
+import { ProductCreateComponent } from './product/product-create/product-create.component';
+import { ProductListComponent } from './product/product-list/product-list.component';
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
-    CalculatorComponent
+    ProductCreateComponent,
+    ProductListComponent
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        FormsModule
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
